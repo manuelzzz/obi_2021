@@ -8,12 +8,12 @@ def somarInteiros(n):
 soma = int(input())
 a = int(input())
 b = int(input())
+resposta = 0
 
 if 1 <= soma <= 36 and a <= b:
     if 1 <= a <= 10000 and 1 <= b <= 10000:
         d = 0
         e = []
-        resposta = 0
         
         while d < b:
             if d==0:
