@@ -1,3 +1,10 @@
+def somarInteiros(n):
+    s = 0
+    while n:
+        s += n % 10
+        n //= 10
+    return s
+
 n = int(input())
 numeros = []
 resposta = ""
@@ -14,4 +21,4 @@ for num in numeros:
 if resposta == "":
     print(0)
 else:
-    print(resposta)
+    print(somarInteiros(int(resposta)))
